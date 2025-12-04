@@ -1689,4 +1689,73 @@ body.menu-open {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 166.667% */
+}
+
+.policy {
+  margin-top: 160px;
+}
+
+.policy-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.policy-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.policy-title {
+  color: var(--black-white-white, #FFF);
+  font-family: "Plus Jakarta Sans";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 48.4px */
+}
+
+.policy-text {
+  color: var(--secondary-100, #D9D9D9);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.4px;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 24px;
+}
+
+.policy-inner {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.policy-item-title {
+  color: var(--black-white-white, #FFF);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.56px;
+  margin-bottom: 24px;
+}
+
+.policy-item-text {
+  color: var(--secondary-200, #939393);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.4px;
 }/*# sourceMappingURL=main.css.map */
