@@ -276,7 +276,7 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -352,6 +352,12 @@ table {
 
 .header-link:hover {
   color: #6C6BF7;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-none {
+    display: none;
+  }
 }
 
 .badge-soon {
@@ -455,12 +461,12 @@ body.menu-open {
     flex-direction: column;
     align-items: center;
     justify-content: unset;
-    gap: 100px;
+    gap: 50px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     border-radius: 0 0 26px 26px;
     border-top: 1px solid var(--effects-background-card, rgba(255, 255, 255, 0.06));
     background: rgba(0, 0, 0, 0.9);
@@ -468,7 +474,7 @@ body.menu-open {
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
     z-index: 1000;
-    padding-top: 50px;
+    padding-top: 70px;
     transition: all 0.3s ease;
   }
   .open {
@@ -1272,6 +1278,11 @@ body.menu-open {
   justify-content: center;
   gap: 40px;
 }
+@media screen and (max-width: 480px) {
+  .method-sticky {
+    gap: 20px;
+  }
+}
 
 /* картки */
 .method-card-wrap {
@@ -1281,12 +1292,29 @@ body.menu-open {
   align-items: center;
   margin-top: 65px;
 }
+@media screen and (max-width: 480px) {
+  .method-card-wrap {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .small-text {
+    font-size: 30px;
+  }
+}
 
 .method-cards {
   position: relative;
   width: min(100%, 560px);
   height: 380px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .method-cards {
+    margin-bottom: 10px;
+    height: 400px;
+  }
 }
 
 .method-card {
@@ -1317,6 +1345,12 @@ body.menu-open {
   font-weight: 400;
   line-height: 140%; /* 39.2px */
   letter-spacing: -0.56px;
+}
+@media screen and (max-width: 480px) {
+  .method-card-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .method-card-text {
@@ -1366,6 +1400,12 @@ body.menu-open {
   /* ховаємо контент для неактивних */
   opacity: 0;
   transition: opacity 400ms ease;
+}
+@media screen and (max-width: 480px) {
+  .card-inner {
+    padding: 24px;
+    gap: 4px;
+  }
 }
 
 /* активна картка */

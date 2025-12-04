@@ -17,6 +17,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    @media screen and (max-width: 480px) {
+      gap: 20px;   
+    }
   }
   
   /* картки */
@@ -28,6 +31,15 @@
     align-items: center;
     margin-top: 65px;
     // align-items: stretch;
+    @media screen and (max-width: 480px) {
+      margin-top: 10px;   
+    }
+  }
+
+  .small-text {
+    @media screen and (max-width: 480px) {
+      font-size: 30px;   
+    }
   }
   
   .method-cards {
@@ -35,6 +47,10 @@
     width: min(100%, 560px);
     height: 380px;
     margin-bottom: 40px;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 10px;   
+      height: 400px;
+    }
   }
   
   .method-card {
@@ -66,6 +82,10 @@ backdrop-filter: blur(20px);
     font-weight: 400;
     line-height: 140%; /* 39.2px */
     letter-spacing: -0.56px;
+    @media screen and (max-width: 480px) {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
   }
 
   .method-card-text {
@@ -99,6 +119,10 @@ letter-spacing: -0.36px;
     /* ховаємо контент для неактивних */
     opacity: 0;
     transition: opacity 400ms ease;
+    @media screen and (max-width: 480px) {
+      padding: 24px;   
+      gap: 4px;
+    }
   }
   
   /* активна картка */

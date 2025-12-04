@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); // напівпрозоре чорне
+  background: rgba(0, 0, 0, 0.6); // напівпрозоре чорне
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -198,6 +198,12 @@
 
 .header-link:hover {
     color: #6C6BF7;
+}
+
+.mobile-none {
+  @media screen and (max-width: 480px) {
+    display: none;     
+  }
 }
 
 .badge-soon {
@@ -420,12 +426,12 @@ body.menu-open {
       flex-direction: column;
       align-items: center;
       justify-content: unset;
-      gap: 100px;
+      gap: 50px;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100vh;
+      height: 85vh;
       border-radius: 0 0 26px 26px;
       border-top: 1px solid var(--effects-background-card, rgba(255, 255, 255, 0.06));
       background: rgba(0, 0, 0, 0.90);
@@ -433,7 +439,7 @@ body.menu-open {
       /* Background Blur */
       backdrop-filter: blur(7px);
       z-index: 1000;
-      padding-top: 50px;
+      padding-top: 70px;
       transition: all 0.3s ease;
     }
   
