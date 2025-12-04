@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estartie</title>
+    <link rel="stylesheet" href="./src/scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./src/images/logo.png"
+                width="40"
+                height="40"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./src/images/logo.png"
+                width="26"
+                height="26"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <div class="burger">
+            <img src="./src/images/burger.svg" alt="" />
+          </div>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#FE170A"
+                />
+              </svg>
+            </div>
+            <a href="#top" class="header-link">Home</a>
+            <a href="#about" class="header-link">About</a>
+            <a href="#servises" class="header-link">Servises</a>
+            <a href="#approach" class="header-link">Approach</a>
+            <a href="#industries" class="header-link">Industries</a>
+            <a href="#contact" class="header-link">Contact</a>
+            <p class="header-link disactive-link">
+              Products
+              <span class="badge-soon">Soon</span>
+            </p>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button"><span>Contact Us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <img src="./src/images/popup1.png" alt="" class="popup-img">
+        <img src="./src/images/popup2.png" alt="" class="popup-img-second">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3><span class="blue">Let’s Start</span> the Conversation</h3>
+              <p class="pop-text">
+                Have a project in mind or looking for strategic direction? Share a few details below, and our team will reach out to discuss how we can support your goals
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <!-- <label for="name">Full name</label> -->
+                <input type="text" id="name" name="name" placeholder="Full Name*" required />
+              </div>
+              <div class="form-field">
+                <!-- <label for="email">Email adress</label> -->
+                <input type="email" id="email" name="email" placeholder="Email Address*" required />
+              </div>
+              <div class="form-field">
+                <!-- <label for="company">Company/Organization (optionaly)</label> -->
+                 <input type="text" id="company" name="company" placeholder="Company / Brand (optional)"/>
+              </div>
+              <div class="form-field">
+                <!-- <label for="message">Message</label> -->
+                <textarea id="message" name="message" placeholder="Message*" rows="5" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn"><span>Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="top" class="hero">
+      <div class="video">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="./src/videos/hero-video-less.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="content">
+          <p class="hero-suptext">Digital Marketing </p>
+          <h1 class="hero-title">
+            <span class="hero-built blue">Built</span><br>
+            <span class="hero-on"><span class="blue">on Insight</span>, </span> <br>
+            <span class="hero-pre">Precision</span> <br>
+            <span class="hero-pur">& Purpose</span><br>
+          </h1>
+          <p class="hero-text hero-text-high">Estartie helps brands grow sustainably through strategic planning, market intelligence, and performance-driven digital marketing. </p>
+          <p class="hero-text hero-text-low">We combine research, analytics, and creative thinking to bring clarity to your goals and momentum to your growth.</p>
+          <button class="hero-button"><span>Get in Touch</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <img class="hero-ellipse" src="./src/images/hero-ellipse.png" alt="">
+      <img src="./src/images/work-ellipse.png" alt="" class="about-ellipse">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="title">The Thinking Behind the<span class="blue"> Work We Do</span></h2>
+          <p class="text">At Estartie, we believe that successful marketing begins with understanding - understanding the market, the audience, and the driving forces behind user behaviour. We reject generic solutions and instead craft strategies rooted in research, tailored to each brand’s objectives, and adapted to evolving market realities. </p>
+          <p class="text">Our principle is simple: clarity leads to impact. Every strategy we develop, every optimisation we deliver, and every brand we support is guided by this commitment to thoughtful, data-led, long-term marketing. </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="wedo">
+      <div class="video-overlay">
+      <div id="wedovideo" class="video">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="./src/videos/wedo-video-less.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+      <div class="container">
+        <div class="wedo-content">
+          <p class="wedo-text">What We Do</p>
+          <h3 class="title">Solutions <span class="grey">Designed for Brands Ready to Move Forward</span></h3>
+        </div>
+        <div class="wedo-list">
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo1.png" width="67" height="67" alt="">
+              <h5 class="wedo-title">Market<span class="grey"> Insights</span></h5>
+            </div>
+            <p class="wedo-item-text">We uncover the information behind your audience, competitors, and industry trends. Through research and analysis, we identify the opportunities that shape stronger strategies and confident decisions</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo2.png" width="48" height="49" alt="">
+              <h5 class="wedo-title">SEO <span class="grey">& Performance</span></h5>
+            </div>
+            <p class="wedo-item-text">Organic visibility is built on structure, relevance, and optimisation. We enhance your website’s technical health, content alignment, and search performance for sustainable traffic growth</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo3.png" width="45" height="59" alt="">
+              <h5 class="wedo-title">Brand <span class="grey">Positioning</span></h5>
+            </div>
+            <p class="wedo-item-text">Your brand’s value needs to be clear, relevant, and consistent. We refine messaging and communication so your identity resonates across every digital touchpoint</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo4.png" width="50" height="65" alt="">
+              <h5 class="wedo-title">Growth <span class="grey">Strategy</span></h5>
+            </div>
+            <p class="wedo-item-text">We help brands expand through planned, data-backed strategies — whether you’re entering a new market, scaling your operations, or strengthening your digital footprint</p>
+          </div>
+        </div>
+
+        <!-- Another section of WEDO -->
+
+        <div id="approach" class="wedo-content" style="margin-top: 200px;">
+          <h3 class="title" style="max-width: 657px;"><span class="grey">The Core Strengths That Shape</span> Our Strategic Approachd</h3>
+          <p class="wedo-text">Strategic Focus Areas</p>
+        </div>
+        <div class="wedo-list">
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo1.png" width="67" height="67" alt="">
+              <h5 class="wedo-title">Market<span class="grey"> Intelligence</span></h5>
+            </div>
+            <p class="wedo-item-text">We use market insights to help brands navigate competitive landscapes with confidence - transforming data into meaningful direction</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo2.png" width="48" height="49" alt="">
+              <h5 class="wedo-title">Digital<span class="grey"> Positioning</span></h5>
+            </div>
+            <p class="wedo-item-text">Our work strengthens how brands appear, communicate, and differentiate themselves online, ensuring they stay relevant and credible</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo3.png" width="45" height="59" alt="">
+              <h5 class="wedo-title">Organic<span class="grey"> Growth Engines</span></h5>
+            </div>
+            <p class="wedo-item-text">Estartie focuses on sustainable growth by improving your search visibility, content performance, and user pathways</p>
+          </div>
+          <div class="wedo-item">
+            <img class="wedo-item-ellipse" src="./src/images/wedo-item-ellipse.png" alt="">
+            <div class="wedo-item-head">
+              <img src="./src/images/wedo4.png" width="50" height="65" alt="">
+              <h5 class="wedo-title">Multi-Market  <span class="grey">Strategy</span></h5>
+            </div>
+            <p class="wedo-item-text">We understand the nuances of European, Middle Eastern, and Asian audiences and help brands adapt their strategies to diverse regions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="title">Understanding the Markets Where <span class="blue">Innovation Never Stops</span></h2>
+          <p class="text">Estartie collaborates with companies operating in fast-moving, innovation-driven sectors. We support brands that require agility, clarity, and structured growth - particularly within technology, SaaS, 
+            e-commerce, digital services, and online entertainment.</p>
+          <p class="text">Our team has extensive experience working across Europe, the Middle East, and Asia, enabling us to shape strategies that respect regional behaviours, cultural expectations, and market-specific challenges. This multi-market awareness allows us to design solutions that scale beyond borders.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries" class="method">
+      <!-- sticky частина -->
+      <div class="container">
+      <div class="method-sticky">
+        <div class="video">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="./src/videos/method-video-less.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="wedo-content">
+          <h2 class="title" style="max-width: 722px;">A Method Built <span class="grey">on Clarity, Insight, and Continuous Refinement</span></h2>
+          <p class="wedo-text">The Estartie Method</p>
+        </div>
+    
+        <div class="method-card-wrap">
+          <div class="method-cards">
+            <article class="method-card is-active" data-step="1">
+              <div class="card-inner">
+                <img src="./src/images/method1.png" width="81" height="96" alt="" class="method-icon">
+                <h3 class="method-card-title">Exploration & Discovery</h3>
+                <p class="method-card-text">We begin by understanding your goals, current challenges, and market environment. This ensures that every next step is aligned with your objectives</p>
+              </div>
+            </article>
+    
+            <article class="method-card" data-step="2">
+              <div class="card-inner">
+                <img src="./src/images/method2.png" width="109" height="108" alt="" class="method-icon">
+                <h3 class="method-card-title">Intelligence Gathering</h3>
+                <p class="method-card-text">We conduct in-depth research, insights collection, and data-driven evaluations to build a strong foundation for decision-making</p>
+              </div>
+            </article>
+    
+            <article class="method-card" data-step="3">
+              <div class="card-inner">
+                <img src="./src/images/method3.png" width="90" height="78" alt="" class="method-icon">
+                <h3 class="method-card-title">Strategic Blueprint Creation</h3>
+                <p class="method-card-text">Based on insights, we develop a tailored roadmap that outlines priorities, actions, and the strategic direction for your brand</p>
+              </div>
+            </article>
+    
+            <article class="method-card" data-step="4">
+              <div class="card-inner">
+                <img src="./src/images/method4.png" width="98" height="81" alt="" class="method-icon">
+                <h3 class="method-card-title">Continuous Forecastingy</h3>
+                <p class="method-card-text">Markets shift - and so should strategies. We assess outcomes, monitor trends, and adjust direction to keep your brand moving forward</p>
+              </div>
+            </article>
+    
+            <article class="method-card" data-step="5">
+              <div class="card-inner">
+                <img src="./src/images/method5.png" width="81" height="87" alt="" class="method-icon">
+                <h3 class="method-card-title">Execution Partnership</h3>
+                <p class="method-card-text">We work alongside your team to implement optimisations, refine messaging, and improve digital performance</p>
+              </div>
+            </article>
+          </div>
+    
+          
+        </div>
+        <div class="method-progress">
+          <div class="progress-line"></div>
+          <div class="progress-fill"></div>
+        
+          <button class="progress-item" data-step="1">1</button>
+          <button class="progress-item" data-step="2">2</button>
+          <button class="progress-item" data-step="3">3</button>
+          <button class="progress-item" data-step="4">4</button>
+          <button class="progress-item" data-step="5">5</button>
+        </div>
+      </div>
+    
+      <!-- “невидимі” тригери для скролу -->
+      <div class="method-scroll">
+        <div class="method-trigger" data-step="1"></div>
+        <div class="method-trigger" data-step="2"></div>
+        <div class="method-trigger" data-step="3"></div>
+        <div class="method-trigger" data-step="4"></div>
+        <div class="method-trigger" data-step="5"></div>
+      </div>
+    </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+      <img src="./src/images/contact-bg.png" alt="" class="contact-img">
+      <div class="container">
+        <div class="contact-inner">
+          <h5 class="contact-title"><span class="grey">Ready to</span> Strengthen Your Digital Position?</h5>
+          <p class="contact-text">Whether you are entering a new market, refining your brand identity, or improving your digital performance, Estartie offers the strategic guidance and practical expertise to support your next stage of growth. Share your goals - and we’ll build the path to help you reach them </p>
+          <button class="hero-button"><span>Get in Touch</span></button>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-column">
+            <img class="footer-img" src="./src/images/footer-logo.png" width="301" height="265" alt="">
+          </div>
+          <div class="footer-mobile-column">
+            <a href="#top" class="header-link">Home</a>
+            <a href="#about" class="header-link">About</a>
+            <a href="#servises" class="header-link">Servises</a>
+            <a href="#approach" class="header-link">Approach</a>
+            <a href="#industries" class="header-link">Industries</a>
+            <a href="#contact" class="header-link">Contact</a>
+            <p class="header-link disactive-link">
+              Products
+              <span class="badge-soon" style="top: 10px; right: -50px; color: #fff;">Soon</span>
+            </p>
+          </div>
+          <div class="footer-column" style="display: flex; flex-direction:column; justify-content:space-between;">
+            <div class="footer-contact">
+              <p class="footer-contact-text">Contact:</p>
+              <p class="footer-contact-meil">info@estartie.com</p>
+            </div>
+            <div class="footer-address">
+              <p class="footer-contact-text">Address:</p>
+              <p class="footer-address-text">Panagias Chrysopyrgotissas 2 <br>PANICOS KANARIS FOUR SEASONS, Flat/ <br>Office 4 Pyrgos, 4529, Limassol, Cyprus</p>
+            </div>
+            <p class="copyright">© 2025 Estartie Management LTD</p>
+          </div>
+          <div class="footer-column footer-column-menu" style="display: flex; justify-content: space-between; gap: 130px;">
+            <div class="footer-menu">
+              <a href="#top" class="header-link">Home</a>
+              <a href="#about" class="header-link">About</a>
+              <a href="#servises" class="header-link">Servises</a>
+              <a href="#approach" class="header-link">Approach</a>
+            </div>
+            <div class="footer-menu">
+              <a href="#industries" class="header-link">Industries</a>
+              <a href="#contact" class="header-link">Contact</a>
+              <p class="header-link disactive-link">
+                Products
+                <span class="badge-soon" style="top: -5px; right: -45px; color: #fff;">Soon</span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-column" style="display: flex; flex-direction:column; align-items:flex-end; justify-content:space-between;">
+            <a class="footer-arrow" href="#top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19.92 15.8001C19.73 15.8001 19.54 15.7301 19.39 15.5801L12.87 9.06008C12.39 8.58008 11.61 8.58008 11.13 9.06008L4.61002 15.5801C4.32002 15.8701 3.84002 15.8701 3.55002 15.5801C3.26002 15.2901 3.26002 14.8101 3.55002 14.5201L10.07 8.00008C11.13 6.94008 12.86 6.94008 13.93 8.00008L20.45 14.5201C20.74 14.8101 20.74 15.2901 20.45 15.5801C20.3 15.7201 20.11 15.8001 19.92 15.8001Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="./src/politic.html" class="privacy">Privacy Policy. All Rights Reserved</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>
